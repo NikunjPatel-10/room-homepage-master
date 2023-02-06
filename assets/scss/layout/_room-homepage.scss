@@ -1,0 +1,15 @@
+.top-img-wrapper{
+    background: url(./../../../images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: cover;
+}
+
+.image-wrapper{
+    overflow: hidden;
+    img{
+        height: 100%;
+        width: 100%;
+    }
+}
+
