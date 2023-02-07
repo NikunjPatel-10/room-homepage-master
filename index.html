@@ -7,6 +7,8 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Frontend Mentor | Room homepage</title>
 
@@ -25,14 +27,41 @@
 
 <body>
 
-  <div class="main-wrapper h-100">
-    <div class="row  h-65 ">
-      <div class=" col-sm-8 top-img-wrapper px-sm-0  ">
-        <div class="d-flex p-5">
-          <figure class="">
+  <div class="main-wrapper  ">
+    <div class="row  h-65 position-relative">
+      <div class="col-12 col-lg-8 top-img-wrapper px-lg-0">
+        <figure class="image-wrapper desktop-img d-lg-block d-none">
+          <img src="./images/desktop-image-hero-1.jpg" alt="desktop-image-hero-1.jpg">
+        </figure>
+        <figure class="image-wrapper mobile-img d-lg-none d-block">
+          <img src="./images/mobile-image-hero-1.jpg" alt="mobile-image-hero-1.jpg">
+        </figure>
+        <div class="d-flex p-5  position-absolute top-0  w-100">
+          <figure class="m-0 d-flex justify-content-center align-items-center room-logo">
             <img src="./images/logo.svg" alt="">
           </figure>
-          <ul class="nav  list-style ">
+          <label class="hamburger" for="toggle-bar">
+            <img src="/images/icon-hamburger.svg" alt="">
+          </label>
+          <ul class="nav  list-style ms-5 nav-desktop">
+            <li class="nav-item">
+              <a class="nav-link" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+          <input type="checkbox" id="toggle-bar">
+          <ul class="nav  list-style ms-5 nav-mobile">
+            <label class="close-menu">
+              <img src="./images/icon-close.svg" alt="">
+            </label>
             <li class="nav-item">
               <a class="nav-link" href="#">home</a>
             </li>
@@ -48,27 +77,38 @@
           </ul>
         </div>
       </div>
-      <div class="col-sm-4  px-5 py-5">
-        <h1> Discover innovative ways to decorate</h1>
-        <p> We provide unmatched quality, comfort, and style for property owners across the country.
+      <div class=" col-12 col-lg-4 px-5 d-flex flex-column justify-content-center align-items-center">
+        <h1 class="decorate-heading fw-bold"> Discover innovative ways to decorate</h1>
+        <p class="decorate-description"> We provide unmatched quality, comfort, and style for property owners across the
+          country.
           Our experts combine form and function in bringing your vision to life. Create a room in your
           own style with our collection and make your property a reflection of you and what you love.</p>
-        Shop now
+        <div class="d-flex justify-content-start w-100">
+          <button class="border-0 bg-white shop-now fw-semibold">SHOP NOW</button>
+          <button class="border-0 ms-3 bg-white fw-semibold"><img src="/images/icon-arrow.svg" alt=""></button>
+        </div>
+      </div>
+      <div class=" btn-wrapper  ">
+        <button class=" bg-black border-0 left-arrow"><img src="./images/icon-angle-left.svg"
+            alt="icon-angle-left.svg"></button>
+        <button class=" bg-black border-0 right-arrow"><img src="./images/icon-angle-right.svg"
+            alt="icon-angle-right.svg"></button>
       </div>
     </div>
     <div class="row h-35">
-      <div class="col-sm-3 h-100">
-        <figure class="image-wrapper h-100"><img src="/images/image-about-dark.jpg" alt="image-about-dark.jpg"></figure>
+      <div class=" col-12 col-lg-3 ">
+        <figure class="image-wrapper"><img src="/images/image-about-dark.jpg" alt="image-about-dark.jpg"></figure>
       </div>
-      <div class="col-sm-6">
-        <h3>About our furniture</h3>
-        <p> Our multifunctional collection blends design and function to suit your individual taste.
+      <div class="col-12 col-lg-6 px-5 d-flex flex-column justify-content-center align-items-center">
+        <h3 class="furniture-heading fw-semibold">ABOUT OUR FURNITURE</h3>
+        <p class="furniture-description"> Our multifunctional collection blends design and function to suit your
+          individual taste.
           Make each room unique, or pick a cohesive theme that best express your interests and what
           inspires you. Find the furniture pieces you need, from traditional to contemporary styles
           or anything in between. Product specialists are available to help you create your dream space.</p>
       </div>
-      <div class="col-sm-3 h-100">
-        <figure class="image-wrapper h-100"><img src="./images/image-about-light.jpg" alt="image-about-light.jpg">
+      <div class=" col-12 col-lg-3">
+        <figure class="image-wrapper "><img src="./images/image-about-light.jpg" alt="image-about-light.jpg">
         </figure>
       </div>
     </div>

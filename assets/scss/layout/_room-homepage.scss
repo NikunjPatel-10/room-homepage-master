@@ -1,15 +1,127 @@
 .top-img-wrapper{
-    background: url(./../../../images/desktop-image-hero-1.jpg);
-    background-repeat: no-repeat;
-    background-size:100%;
-    background-position: cover;
+    height: 100%;
 }
 
-.image-wrapper{
+.hamburger {
+    display: none;
+    // position: absolute;
+}
+
+.desktop-img{
+    height: 100%;
+}
+
+
+
+
+
+
+.nav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 0;
     overflow: hidden;
-    img{
+    transform: translateY(-500px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 10%;
+    transition: all 0.5s ease-in-out;
+}
+
+.image-wrapper {
+  
+    overflow: hidden;
+
+    img {
         height: 100%;
         width: 100%;
+        object-fit: cover;
     }
 }
 
+
+.decorate-description {
+    color: $description-text-color;
+}
+
+.shop-now {
+    letter-spacing: 10px;
+}
+
+.btn-wrapper{
+    position: absolute;
+    left: 66%;
+    bottom: 0;
+   margin-left: -2px;
+  
+}
+.furniture-heading {
+    letter-spacing: 10px;
+}
+
+.furniture-description {
+    color: $description-text-color;
+}
+
+.left-arrow {
+    padding: 37px;
+}
+
+.right-arrow {
+    padding: 37px;
+    margin-left: -5px;
+}
+
+#toggle-bar {
+    display: none;
+}
+
+@media(max-width:425px) {
+
+    .desktop-img{
+        height: 0%;
+    }
+    
+  
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 35%;
+        left: 5%;
+    }
+
+    .nav-desktop {
+        display: none;
+    }
+
+
+    #toggle-bar:checked+.nav-mobile {
+        width: 100%;
+        transform: translateY(0px);
+        background-color: white;
+
+    }
+
+    .room-logo {
+        width: 100%;
+    }
+
+    .nav-link {
+        color: black;
+        margin-left: -5px;
+    }
+
+  .close-menu{
+    margin-right: 15px;
+    
+  }
+//   .btn-wrapper{
+//     position: absolute;
+ 
+  
+// }
+
+}
