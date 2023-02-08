@@ -1,20 +1,6 @@
-.top-img-wrapper{
-    height: 100%;
-}
-
 .hamburger {
     display: none;
-    // position: absolute;
 }
-
-.desktop-img{
-    height: 100%;
-}
-
-
-
-
-
 
 .nav-mobile {
     display: flex;
@@ -31,7 +17,7 @@
 }
 
 .image-wrapper {
-  
+    height: 100%;
     overflow: hidden;
 
     img {
@@ -50,19 +36,14 @@
     letter-spacing: 10px;
 }
 
-.btn-wrapper{
-    position: absolute;
-    left: 66%;
-    bottom: 0;
-   margin-left: -2px;
-  
-}
+
 .furniture-heading {
     letter-spacing: 10px;
 }
 
 .furniture-description {
     color: $description-text-color;
+
 }
 
 .left-arrow {
@@ -80,11 +61,9 @@
 
 @media(max-width:425px) {
 
-    .desktop-img{
+    .desktop-img {
         height: 0%;
     }
-    
-  
 
     .hamburger {
         display: block;
@@ -96,7 +75,6 @@
     .nav-desktop {
         display: none;
     }
-
 
     #toggle-bar:checked+.nav-mobile {
         width: 100%;
@@ -114,14 +92,9 @@
         margin-left: -5px;
     }
 
-  .close-menu{
-    margin-right: 15px;
-    
-  }
-//   .btn-wrapper{
-//     position: absolute;
- 
-  
-// }
+    .close-menu {
+        margin-right: 15px;
+
+    }
 
 }

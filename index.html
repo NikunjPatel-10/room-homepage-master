@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <script src="node_modules/bootstrap/js/src/carousel.js"></script> -->
   <title>Frontend Mentor | Room homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -27,14 +28,14 @@
 
 <body>
 
-  <div class="main-wrapper  ">
-    <div class="row  h-65 position-relative">
-      <div class="col-12 col-lg-8 top-img-wrapper px-lg-0">
-        <figure class="image-wrapper desktop-img d-lg-block d-none">
-          <img src="./images/desktop-image-hero-1.jpg" alt="desktop-image-hero-1.jpg">
+  <div class="main-wrapper  overflow-hidden">
+    <div class="row">
+      <div class="col-12 col-sm-8 top-img-wrapper px-sm-0  position-relative">
+        <figure class="image-wrapper desktop-img d-sm-block d-none slide mb-0">
+          <img src="./images/desktop-image-hero-1.jpg" alt="desktop-image-hero-1.jpg" id="desktop-slide">
         </figure>
-        <figure class="image-wrapper mobile-img d-lg-none d-block">
-          <img src="./images/mobile-image-hero-1.jpg" alt="mobile-image-hero-1.jpg">
+        <figure class="image-wrapper mobile-img d-sm-none d-block slide mb-0">
+          <img data-bind="" src="./images/mobile-image-hero-1.jpg" alt="mobile-image-hero-1.jpg">
         </figure>
         <div class="d-flex p-5  position-absolute top-0  w-100">
           <figure class="m-0 d-flex justify-content-center align-items-center room-logo">
@@ -76,8 +77,15 @@
             </li>
           </ul>
         </div>
+        <div class=" btn-wrapper d-flex position-absolute  bottom-0 end-0  d-sm-none d-block">
+          <button class=" bg-black border-0 left-arrow p-4"><img src="./images/icon-angle-left.svg"
+              alt="icon-angle-left.svg"></button>
+          <button class=" bg-black border-0 right-arrow p-4"><img src="./images/icon-angle-right.svg"
+              alt="icon-angle-right.svg"></button>
+        </div>
       </div>
-      <div class=" col-12 col-lg-4 px-5 d-flex flex-column justify-content-center align-items-center">
+      <div
+        class=" col-12 col-sm-4 px-sm-5 px-5 py-3 d-flex flex-column justify-content-center align-items-center position-relative">
         <h1 class="decorate-heading fw-bold"> Discover innovative ways to decorate</h1>
         <p class="decorate-description"> We provide unmatched quality, comfort, and style for property owners across the
           country.
@@ -87,19 +95,19 @@
           <button class="border-0 bg-white shop-now fw-semibold">SHOP NOW</button>
           <button class="border-0 ms-3 bg-white fw-semibold"><img src="/images/icon-arrow.svg" alt=""></button>
         </div>
-      </div>
-      <div class=" btn-wrapper  ">
-        <button class=" bg-black border-0 left-arrow"><img src="./images/icon-angle-left.svg"
-            alt="icon-angle-left.svg"></button>
-        <button class=" bg-black border-0 right-arrow"><img src="./images/icon-angle-right.svg"
-            alt="icon-angle-right.svg"></button>
+        <div class=" btn-wrapper d-flex position-absolute bottom-0 start-0 d-sm-block d-none">
+          <button class=" bg-black border-0 left-arrow"><img src="./images/icon-angle-left.svg"
+              alt="icon-angle-left.svg"></button>
+          <button class=" bg-black border-0 right-arrow"><img src="./images/icon-angle-right.svg"
+              alt="icon-angle-right.svg"></button>
+        </div>
       </div>
     </div>
-    <div class="row h-35">
-      <div class=" col-12 col-lg-3 ">
-        <figure class="image-wrapper"><img src="/images/image-about-dark.jpg" alt="image-about-dark.jpg"></figure>
+    <div class="row ">
+      <div class=" col-12 col-sm-3 ">
+        <figure class="image-wrapper "><img src="/images/image-about-dark.jpg" alt="image-about-dark.jpg"></figure>
       </div>
-      <div class="col-12 col-lg-6 px-5 d-flex flex-column justify-content-center align-items-center">
+      <div class="col-12 col-sm-6 px-sm-5 px-5 py-3 d-flex flex-column justify-content-center align-items-center">
         <h3 class="furniture-heading fw-semibold">ABOUT OUR FURNITURE</h3>
         <p class="furniture-description"> Our multifunctional collection blends design and function to suit your
           individual taste.
@@ -107,11 +115,15 @@
           inspires you. Find the furniture pieces you need, from traditional to contemporary styles
           or anything in between. Product specialists are available to help you create your dream space.</p>
       </div>
-      <div class=" col-12 col-lg-3">
+      <div class=" col-12 col-sm-3">
         <figure class="image-wrapper "><img src="./images/image-about-light.jpg" alt="image-about-light.jpg">
         </figure>
       </div>
     </div>
+
+
+
+
   </div>
 
 
@@ -134,7 +146,7 @@
 
 
 
-
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
