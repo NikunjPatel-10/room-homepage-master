@@ -6106,6 +6106,14 @@ progress {
   display: none;
 }
 
+.slides {
+  display: none;
+}
+
+.nav-mobile-wrapper {
+  display: none;
+}
+
 .nav-mobile {
   display: flex;
   justify-content: center;
@@ -6146,12 +6154,16 @@ progress {
   color: hsl(0deg, 0%, 63%);
 }
 
+.btn-wrapper {
+  margin-left: -1px;
+}
+
 .left-arrow {
-  padding: 37px;
+  padding: 35px;
 }
 
 .right-arrow {
-  padding: 37px;
+  padding: 35px;
   margin-left: -5px;
 }
 
@@ -6163,16 +6175,20 @@ progress {
   .desktop-img {
     height: 0%;
   }
+  .slides {
+    display: flex;
+    flex-direction: column;
+  }
   .hamburger {
     display: block;
     position: absolute;
     top: 35%;
-    left: 5%;
+    left: 10%;
   }
   .nav-desktop {
     display: none;
   }
-  #toggle-bar:checked + .nav-mobile {
+  .nav-mobile {
     width: 100%;
     transform: translateY(0px);
     background-color: white;
@@ -6186,6 +6202,13 @@ progress {
   }
   .close-menu {
     margin-right: 15px;
+  }
+  .left-arrow {
+    padding: 25px;
+  }
+  .right-arrow {
+    padding: 25px;
+    margin-left: -5px;
   }
 }
 
