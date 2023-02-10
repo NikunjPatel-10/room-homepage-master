@@ -13,15 +13,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 0;
     overflow: hidden;
-    transform: translateY(-500px);
     position: absolute;
     top: 0;
     right: 0;
     bottom: 10%;
-    transition: all 0.5s ease-in-out;
-  
+    width: 100%;
+    background-color: white;
 }
 
 .image-wrapper {
@@ -91,15 +89,6 @@
     .nav-desktop {
         display: none;
     }
-
-    .nav-mobile {
-        width: 100%;
-        transform: translateY(0px);
-        background-color: white;
-    }
-   
-
-
     .room-logo {
         width: 100%;
     }

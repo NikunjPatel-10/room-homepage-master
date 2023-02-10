@@ -23,12 +23,6 @@ function showSlides(n) {
    slides[slideIndex -1].style.display = "flex"
 }
 
-
-// let close = document.getElementsByClassName('close-menu')
-// close.addEventListener('click' , (event)=>{
-//     event.target.remove();
-// })
-
 function openmenu(){
   document.getElementById('mobile-nav').classList.add('nav-mobile');
 }
