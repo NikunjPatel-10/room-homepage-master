@@ -1,0 +1,115 @@
+.hamburger {
+    display: none;
+}
+
+.slides {
+    display: none;
+}
+.nav-mobile-wrapper{
+    display: none;
+}
+
+.nav-mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 10%;
+    width: 100%;
+    background-color: white;
+}
+
+.image-wrapper {
+    height: 100%;
+    overflow: hidden;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+.decorate-description {
+    color: $description-text-color;
+}
+
+.shop-now {
+    letter-spacing: 10px;
+}
+
+
+.furniture-heading {
+    letter-spacing: 10px;
+}
+
+.furniture-description {
+    color: $description-text-color;
+
+}
+.btn-wrapper{
+    margin-left: -1px;
+}
+
+.left-arrow {
+    padding: 35px;
+}
+
+.right-arrow {
+    padding: 35px;
+    margin-left: -5px;
+}
+
+
+#toggle-bar {
+    display: none;
+}
+
+@media(max-width:425px) {
+
+    .desktop-img {
+        height: 0%;
+    }
+
+    .slides{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 35%;
+        left: 10%;
+       
+    }
+    .nav-desktop {
+        display: none;
+    }
+    .room-logo {
+        width: 100%;
+    }
+
+    .nav-link {
+        color: black;
+        margin-left: -5px;
+    }
+
+    .close-menu {
+        margin-right: 15px;
+
+    }
+    .left-arrow {
+        padding: 25px;
+    }
+    
+    .right-arrow {
+        padding: 25px;
+        margin-left: -5px;
+    }
+    
+
+}

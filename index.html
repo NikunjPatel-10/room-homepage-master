@@ -1,59 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- <script src="node_modules/bootstrap/js/src/carousel.js"></script> -->
   <title>Frontend Mentor | Room homepage</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+ 
 </head>
+
 <body>
-  Home
-  Shop
-  About
-  Contact
 
-  Discover innovative ways to decorate
+  <div class="main-wrapper  overflow-hidden">
+    <div class="row position-relative">
 
-  We provide unmatched quality, comfort, and style for property owners across the country. 
-  Our experts combine form and function in bringing your vision to life. Create a room in your 
-  own style with our collection and make your property a reflection of you and what you love.
+      <div class="">
+        <div class="slides">
+          <div class="col-12 col-sm-8 position-relative">
+            <figure class="image-wrapper desktop-img d-sm-block d-none slide mb-0">
+              <img src="./images/desktop-image-hero-1.jpg" alt="desktop-image-hero-1.jpg" id="desktop-slide">
+            </figure>
+            <figure class="image-wrapper mobile-img d-sm-none d-block slide mb-0">
+              <img data-bind="" src="./images/mobile-image-hero-1.jpg" alt="mobile-image-hero-1.jpg">
+            </figure>
+            <div class=" btn-wrapper d-flex position-absolute end-0 bottom-0 d-block d-sm-none">
+              <button class=" bg-black border-0 left-arrow " onclick="showData(-1)"><img src="./images/icon-angle-left.svg"
+                  alt="icon-angle-left.svg"></button>
+              <button class=" bg-black border-0 right-arrow " onclick="showData(-1)"><img src="./images/icon-angle-right.svg"
+                  alt="icon-angle-right.svg"></button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 d-flex flex-column justify-content-center align-items-center px-5 py-3 position-relative">
+            <h1 class="decorate-heading fw-bold">Discover innovative ways to decorat</h1>
+            <p class="decorate-description">  We provide unmatched quality, comfort, and style for property owners across the  country.
+              Our experts combine form and function in bringing your vision to life. Create a room in your
+              own style with our collection and make your property a reflection of you and what you love.</p>
+              <div class="d-flex justify-content-start w-100">
+                <button class="border-0 bg-white shop-now fw-semibold">SHOP NOW</button>
+                <button class="border-0 ms-3 bg-white fw-semibold"><img src="/images/icon-arrow.svg" alt=""></button>
+              </div>
+              <div class=" btn-wrapper d-flex position-absolute start-0 bottom-0 d-sm-block d-none">
+                <button class=" bg-black border-0 left-arrow " onclick="showData(-1)"><img src="./images/icon-angle-left.svg"
+                    alt="icon-angle-left.svg"></button>
+                <button class=" bg-black border-0 right-arrow " onclick="showData(-1)"><img src="./images/icon-angle-right.svg"
+                    alt="icon-angle-right.svg"></button>
+              </div>
+          </div>
+        </div>
+        <div class="slides">
+          <div class=" col-12 col-sm-8 position-relative">
+            <figure class="image-wrapper desktop-img d-sm-block d-none slide mb-0">
+              <img src="./images/desktop-image-hero-2.jpg" alt="desktop-image-hero-1.jpg" id="desktop-slide">
+            </figure>
+            <figure class="image-wrapper mobile-img d-sm-none d-block slide mb-0">
+              <img data-bind="" src="./images/mobile-image-hero-2.jpg" alt="mobile-image-hero-1.jpg">
+            </figure>
+            <div class=" btn-wrapper d-flex position-absolute end-0 bottom-0 d-block d-sm-none">
+              <button class=" bg-black border-0 left-arrow " onclick="showData(-1)"><img src="./images/icon-angle-left.svg"
+                  alt="icon-angle-left.svg"></button>
+              <button class=" bg-black border-0 right-arrow " onclick="showData(-1)"><img src="./images/icon-angle-right.svg"
+                  alt="icon-angle-right.svg"></button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 px-5 py-3 d-flex flex-column justify-content-center align-items-center position-relative">
+            <h1 class="decorate-heading fw-bold">We are available all across the globe</h1>
+            <p > With stores all over the world, it's easy for you to find furniture for your home or place of business.
+              Locally, we’re in most major cities throughout the country. Find the branch nearest you using our
+              store locator. Any questions? Don't hesitate to contact us today.
+              Shop now</p>
+              <div class="d-flex justify-content-start w-100">
+                <button class="border-0 bg-white shop-now fw-semibold">SHOP NOW</button>
+                <button class="border-0 ms-3 bg-white fw-semibold"><img src="/images/icon-arrow.svg" alt=""></button>
+              </div>
+              <div class=" btn-wrapper d-flex  position-absolute start-0 bottom-0 d-sm-block d-none">
+                <button class=" bg-black border-0 left-arrow " onclick="showData(-1)"><img src="./images/icon-angle-left.svg"
+                    alt="icon-angle-left.svg"></button>
+                <button class=" bg-black border-0 right-arrow " onclick="showData(-1)"><img src="./images/icon-angle-right.svg"
+                    alt="icon-angle-right.svg"></button>
+              </div>
+          </div>
+        </div>
+        <div class="slides">
+          <div class="col-12 col-sm-8 position-relative">
+            <figure class="image-wrapper desktop-img d-sm-block d-none slide mb-0 position-relative">
+              <img src="./images/desktop-image-hero-3.jpg" alt="desktop-image-hero-1.jpg" id="desktop-slide">
+            </figure>
+            <figure class="image-wrapper mobile-img d-sm-none d-block slide mb-0">
+              <img data-bind="" src="./images/mobile-image-hero-3.jpg" alt="mobile-image-hero-1.jpg">
+            </figure>
+            <div class=" btn-wrapper d-flex position-absolute end-0 bottom-0 d-sm-none d-block ">
+              <button class=" bg-black border-0 left-arrow " onclick="showData(-1)"><img src="./images/icon-angle-left.svg"
+                  alt="icon-angle-left.svg"></button>
+              <button class=" bg-black border-0 right-arrow " onclick="showData(-1)"><img src="./images/icon-angle-right.svg"
+                  alt="icon-angle-right.svg"></button>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 px-5 py-3 d-flex flex-column justify-content-center align-items-center position-relative">
+            <h1 class="decorate-heading fw-bold">Manufactured with the best materials</h1>
+            <p> Our modern furniture store provide a high level of quality. Our company has invested in advanced technology
+              to ensure that every product is made as perfect and as consistent as possible. With three decades of
+              experience in this industry, we understand what customers want for their home and office.</p>
+              <div class="d-flex justify-content-start w-100">
+                <button class="border-0 bg-white shop-now fw-semibold">SHOP NOW</button>
+                <button class="border-0 ms-3 bg-white fw-semibold"><img src="/images/icon-arrow.svg" alt=""></button>
+              </div>
+              <div class=" btn-wrapper d-flex  position-absolute start-0 bottom-0 d-sm-block d-none">
+                <button class=" bg-black border-0 left-arrow " onclick="showData(-1)"><img src="./images/icon-angle-left.svg"
+                    alt="icon-angle-left.svg"></button>
+                <button class=" bg-black border-0 right-arrow " onclick="showData(-1)"><img src="./images/icon-angle-right.svg"
+                    alt="icon-angle-right.svg"></button>
+              </div>
+          </div>
+        </div>
+       
+      </div>
+    
+      <div class="d-flex p-5  position-absolute top-25 left-25  w-100 ">
+        <figure class="m-0 d-flex justify-content-center align-items-center room-logo">
+          <img src="./images/logo.svg" alt="">
+        </figure>
+        <label class="hamburger"  for="toggle-bar" onclick="openmenu()">
+          <img src="/images/icon-hamburger.svg" alt="">
+        </label>
+        <ul class="nav  list-style ms-5 nav-desktop">
+          <li class="nav-item">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+        <!-- <input type="checkbox" id="toggle-bar" > -->
+        <ul class="nav  list-style ms-5 nav-mobile-wrapper" id="mobile-nav"  >
+        
+          <label class="close-menu" onclick="closemenu()">
+            <img src="./images/icon-close.svg" alt="">
+          </label>
+          <li class="nav-item">
+            <a class="nav-link" href="#">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
 
-  Shop now
-
-  We are available all across the globe
-
-  With stores all over the world, it's easy for you to find furniture for your home or place of business. 
-  Locally, we’re in most major cities throughout the country. Find the branch nearest you using our 
-  store locator. Any questions? Don't hesitate to contact us today.
-
-  Shop now
-
-  Manufactured with the best materials
-
-  Our modern furniture store provide a high level of quality. Our company has invested in advanced technology 
-  to ensure that every product is made as perfect and as consistent as possible. With three decades of 
-  experience in this industry, we understand what customers want for their home and office.
-
-  Shop now
-
-  About our furniture
-
-  Our multifunctional collection blends design and function to suit your individual taste.
-  Make each room unique, or pick a cohesive theme that best express your interests and what
-  inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-  or anything in between. Product specialists are available to help you create your dream space.
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <div class="row ">
+      <div class=" col-12 col-sm-3 ">
+        <figure class="image-wrapper "><img src="/images/image-about-dark.jpg" alt="image-about-dark.jpg"></figure>
+      </div>
+      <div class="col-12 col-sm-6 px-sm-5 px-5 py-3 d-flex flex-column justify-content-center align-items-center">
+        <h3 class="furniture-heading fw-semibold">ABOUT OUR FURNITURE</h3>
+        <p class="furniture-description"> Our multifunctional collection blends design and function to suit your
+          individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
+      </div>
+      <div class=" col-12 col-sm-3">
+        <figure class="image-wrapper "><img src="./images/image-about-light.jpg" alt="image-about-light.jpg">
+        </figure>
+      </div>
+    </div>
   </div>
+
+<!-- <div class="col-12 col-sm-8 top-img-wrapper px-sm-0  position-relative">
+        <figure class="image-wrapper desktop-img d-sm-block d-none slide mb-0">
+          <img src="./images/desktop-image-hero-1.jpg" alt="desktop-image-hero-1.jpg" id="desktop-slide">
+        </figure>
+        <figure class="image-wrapper mobile-img d-sm-none d-block slide mb-0">
+          <img data-bind="" src="./images/mobile-image-hero-1.jpg" alt="mobile-image-hero-1.jpg">
+        </figure>
+        <div class="d-flex p-5  position-absolute top-0  w-100">
+          <figure class="m-0 d-flex justify-content-center align-items-center room-logo">
+            <img src="./images/logo.svg" alt="">
+          </figure>
+          <label class="hamburger" for="toggle-bar">
+            <img src="/images/icon-hamburger.svg" alt="">
+          </label>
+          <ul class="nav  list-style ms-5 nav-desktop">
+            <li class="nav-item">
+              <a class="nav-link" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+          <input type="checkbox" id="toggle-bar">
+          <ul class="nav  list-style ms-5 nav-mobile">
+            <label class="close-menu">
+              <img src="./images/icon-close.svg" alt="">
+            </label>
+            <li class="nav-item">
+              <a class="nav-link" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="#">about</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class=" btn-wrapper d-flex position-absolute  bottom-0 end-0  d-sm-none d-block">
+          <button class=" bg-black border-0 left-arrow p-4"><img src="./images/icon-angle-left.svg"
+              alt="icon-angle-left.svg"></button>
+          <button class=" bg-black border-0 right-arrow p-4"><img src="./images/icon-angle-right.svg"
+              alt="icon-angle-right.svg"></button>
+        </div>
+      </div>
+      <div
+        class=" col-12 col-sm-4 px-sm-5 px-5 py-3 d-flex flex-column justify-content-center align-items-center position-relative">
+        <h1 class="decorate-heading fw-bold"> Discover innovative ways to decorate</h1>
+        <p class="decorate-description"> We provide unmatched quality, comfort, and style for property owners across the
+          country.
+          Our experts combine form and function in bringing your vision to life. Create a room in your
+          own style with our collection and make your property a reflection of you and what you love.</p>
+        <div class="d-flex justify-content-start w-100">
+          <button class="border-0 bg-white shop-now fw-semibold">SHOP NOW</button>
+          <button class="border-0 ms-3 bg-white fw-semibold"><img src="/images/icon-arrow.svg" alt=""></button>
+        </div>
+        <div class=" btn-wrapper d-flex position-absolute bottom-0 start-0 d-sm-block d-none">
+          <button class=" bg-black border-0 left-arrow"><img src="./images/icon-angle-left.svg"
+              alt="icon-angle-left.svg"></button>
+          <button class=" bg-black border-0 right-arrow"><img src="./images/icon-angle-right.svg"
+              alt="icon-angle-right.svg"></button>
+        </div>
+      </div> -->
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>
